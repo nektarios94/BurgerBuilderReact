@@ -1,0 +1,17 @@
+.Menu {
+    background-color: transparent;
+    height: 100%;
+    width: 51px;
+    border: 0;
+    /* outline: none; */
+    cursor: pointer;
+}
+
+.Bar {
+    width:30px;
+    height: 4px;
+    background-color: black;
+    margin: 4px;
+    padding: 0;
+}
+
