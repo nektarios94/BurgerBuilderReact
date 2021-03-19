@@ -18,7 +18,10 @@ const INGREDIENT_PRICES = {
 }
 
 class BurgerBuilder extends Component {
-    
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {...}
+    // }
     state = {
         ingredients: null,
         totalPrice: 4,
@@ -87,7 +90,7 @@ class BurgerBuilder extends Component {
                 address: {                      //  \
                     street: 'Teststreet 1',     //   \
                     zipDode: 44444,             //    \
-                    country: 'Greece'           //      some dummy order datea
+                    country: 'Greece'           //      some dummy order data
                 },                              //    /
                 email: 'test@test.com'          //   /
             },                                  //  /
@@ -133,10 +136,10 @@ class BurgerBuilder extends Component {
                 </Aux>
             );
             orderSummary = <OrderSummary 
-            ingredients={this.state.ingredients}
-            purchaseCancelled={this.purchaseCancelHandler}
-            purchaseContinued={this.purchaseContinueHandler}
-            price={this.state.totalPrice} />
+                ingredients={this.state.ingredients}
+                purchaseCancelled={this.purchaseCancelHandler}
+                purchaseContinued={this.purchaseContinueHandler}
+                price={this.state.totalPrice} />
         
         }
         if (this.state.loading) {
