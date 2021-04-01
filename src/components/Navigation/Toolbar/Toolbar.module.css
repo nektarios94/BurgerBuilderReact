@@ -8,7 +8,7 @@
     display: flex; /* so that all the items in the toolbar are all next to each other */
     justify-content: space-between; /* 'justify-content' is a property of 'flex' that determines how the items are spread out */
     align-items: center; /* determines how they should be aligned VERTICLY */
-    padding: 0 7px;
+    padding: 0 10px;
     box-sizing: border-box; /* to make sure that the toolbar is sized correctly, even with the padding */
     z-index: 90;
 }

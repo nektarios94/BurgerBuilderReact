@@ -25,7 +25,7 @@ class BurgerBuilder extends Component {
     state = {
         ingredients: null,
         totalPrice: 4,
-        purchaseable: false,
+        purchasable: true,
         purchasing: false,
         loading: false,
         error: false
@@ -41,10 +41,11 @@ class BurgerBuilder extends Component {
             });
     }
 
-    updatePurchaseState (ingredients) {
+    updatePurchaseState (ingredients) { // if we make calculations based on this.state.ingredients instead of the ingredients passed we might 
+        // be working with an outdated version of ingredients, due to the nature of setState()
         const sum = Object.values(ingredients).reduce((sum,el) => sum + el);
         console.log ('sum: ',sum);
-        this.setState({purchaseable: sum > 0})
+        this.setState({purchasable: sum > 0})
     }
 
     addIngredientHandler = (type) => {
@@ -113,7 +114,8 @@ class BurgerBuilder extends Component {
             ...this.state.ingredients
         };
         for (let key in disabledInfoLess) {
-            disabledInfoLess[key] = (disabledInfoLess[key] <= 0)
+            disabledInfoLess[key] = (disabledInfoLess[key] == 0)
+            
         }
         for (let key in disabledInfoMore) {
             disabledInfoMore[key] = (disabledInfoMore[key] >= 3)
@@ -131,7 +133,7 @@ class BurgerBuilder extends Component {
                         disabledLess={disabledInfoLess}
                         disabledMore={disabledInfoMore}
                         price={this.state.totalPrice}
-                        purchaseable={this.state.purchaseable} 
+                        purchasable={this.state.purchasable} 
                         ordered={this.purchaseHandler} />
                 </Aux>
             );

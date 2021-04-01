@@ -6,7 +6,6 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 import SideDrawer from '../SideDrawer/SideDrawer';
 
-
 const toolbar = (props) => (
     <header className={classes.Toolbar}>
         { /* <Menu clicked={props.drawerToggleClicked}/> */ /* το δημιουργησα στην ασκηση και ηταν σωστο. Ο Maximilian χρησιμοποιησε το SideDrawer(απο κατω) ως λυση */}
