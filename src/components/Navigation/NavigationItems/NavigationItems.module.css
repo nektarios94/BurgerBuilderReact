@@ -1,10 +1,9 @@
 .NavigationItems {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0;          /* overriding the default list style */
+    padding: 0;                     /* - //-  */
+    list-style: none;               /* - //-  */
     display: flex;
     flex-flow: column;
-    align-items: center;
     height: 100%;
 }
 

@@ -1,5 +1,5 @@
 .NavigationItem {
-    margin: 10px 0;
+    margin: 10px 0; /* margin of 10px from top  and 0px from left to right */
     box-sizing: border-box;
     display: block;
     width: 100%;

@@ -18,7 +18,7 @@ class Layout extends Component {
     sideDrawerToggleHandler = () => {
         //about the use of this.state in setState: due to the asynchronous nature of setState, doing for example 
     // this.setState ({showSideDrawer: !this.state.showSideDrawer}) can lead to unexpected outcomes
-    // Passing an update function allows you to access the current state value inside the updater: 
+    // Function form: Passing an update function allows you to access the current state value inside the updater: 
         this.setState (prevState => {
             return {showSideDrawer: !prevState.showSideDrawer};
         } );

@@ -1,5 +1,5 @@
 .Burger {
-    width:100%;
+    width:80%;
     margin: auto;
     height: 250px; /*limits the height */
     overflow: auto; /* in the lecture the value was set to scroll */

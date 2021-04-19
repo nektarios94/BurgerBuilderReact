@@ -7,7 +7,7 @@ import classes from './Logo.module.css';
 const logo = (props) => (
     <div className={classes.Logo}>
         <img src={burgerLogo /* this refers to a string in the end, to the path where Webpack stored the optimized and copied image */}
-        alt='MyBurger'/> 
+        alt='MyBurger' /> 
     </div>
 );
 
